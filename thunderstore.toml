@@ -1,0 +1,36 @@
+[config]
+schemaVersion = "0.0.1"
+
+
+[package]
+namespace = "nbusseneau"
+name = "Fuel_Daylight_Saving"
+versionNumber = "0.0.1"
+description = "Disables fuel-based fireplaces in daylight. Configurable exception list (default: never disable campfires and hearths, for cooking and comfort purposes). Client-side."
+websiteUrl = "https://github.com/nbusseneau/FuelDaylightSaving"
+containsNsfwContent = false
+
+[package.dependencies]
+denikson-BepInExPack_Valheim = "5.4.2202"
+
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "./CHANGELOG.md"
+
+[[build.copy]]
+source = "./src/bin/Release/FuelDaylightSaving.dll"
+target = "./plugins/FuelDaylightSaving.dll"
+
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "valheim", ]
+
+[publish.categories]
+valheim = [ "client-side", "mods", "ashlands-update", ]
