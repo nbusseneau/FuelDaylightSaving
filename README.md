@@ -4,6 +4,8 @@ Very simple [Valheim](https://store.steampowered.com/app/892970/Valheim/) mod th
 Configurable exception list (default: never disable campfires and hearths, for cooking and comfort purposes).
 Client-side.
 
+![showcase](https://github.com/nbusseneau/FuelDaylightSaving/assets/4659919/18650599-6092-4a31-8234-d93ec2b7b95d)
+
 ## But why?
 
 **Fuel Daylight Saving** helps you ~~reduce your CO₂ emissions~~ save on precious fuel by disabling most fireplaces in daylight, except those specified in a configurable exception list and infinite fuel fireplaces (e.g. Haldor / Hildir fire pits).
