@@ -20,11 +20,14 @@ public class Plugin : BaseUnityPlugin
     "BRP_RefinedStone_Hearth", // blacks7ar-RefinedStonePieces
   ];
   private static ConfigEntry<string> s_exceptionList;
-  public static HashSet<string> ExceptionList => s_exceptionList.Value.Split(',').Select(prefabName => $"{prefabName.Trim()}(Clone)").ToHashSet();
+  private static HashSet<string> ParseExceptionList(string serializedExceptionList) => serializedExceptionList.Split(',').Select(prefabName => $"{prefabName.Trim()}(Clone)").ToHashSet();
+  public static HashSet<string> ExceptionList { get; private set; }
 
   public void Awake()
   {
     s_exceptionList = Config.Bind("Behaviour", "Exception list", s_defaultExceptionList.Join(), "List of piece names whose fireplace should be kept lit at all times (e.g. because you want to use them for cooking stations or as comfort providers).");
+    ExceptionList = ParseExceptionList(s_exceptionList.Value);
+    s_exceptionList.SettingChanged += (_, _) => ExceptionList = ParseExceptionList(s_exceptionList.Value);
     SetUpConfigWatcher();
 
     Harmony harmony = new(ModGUID);
