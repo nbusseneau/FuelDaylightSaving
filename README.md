@@ -18,7 +18,7 @@ Note that **Fuel Daylight Saving™️** uses the game's daylight detection mech
 ## Compatibility with other mods
 
 **Fuel Daylight Saving™️** hooks onto the `Fireplace` component itself and should work transparently with all mods, including those that add new fireplaces (buildable or not, infinite fuel or not).
-However, it cannot automatically detect if any modded fireplace should be added to the exception list: your help is appreciated in editing the default exception list such that **Fuel Daylight Saving™️** remains pain-free with most modpacks 🙇
+However, it cannot automatically detect if any modded fireplace should be added to the exception list: your help is appreciated in enriching the default exception list such that **Fuel Daylight Saving™️** does not need to be configured by most users 🙇
 Feel free to [report any issue you find](https://github.com/nbusseneau/FuelDaylightSaving/issues/new).
 
 ## Install
