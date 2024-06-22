@@ -33,4 +33,4 @@ repository = "https://thunderstore.io"
 communities = [ "valheim", ]
 
 [publish.categories]
-valheim = [ "client-side", "mods", "ashlands-update", ]
+valheim = [ "client-side", "mods", "tweaks", "utility", "ashlands-update", ]
