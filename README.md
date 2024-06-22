@@ -48,7 +48,7 @@ It does not need to be installed on the server.
           └── README.md
   ```
 
-### Special thanks
+## Special thanks
 
 **Fuel Daylight Saving** is a reimplementation of a mod initially created by [warpalicious](https://thunderstore.io/c/valheim/p/warpalicious/).
 Check out their POI content mods, you won't regret it 👍
