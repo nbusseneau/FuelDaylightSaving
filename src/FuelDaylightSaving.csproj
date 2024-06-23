@@ -5,7 +5,7 @@
     <LangVersion>12.0</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <R2ModManProfile>FuelDaylightSavingDev</R2ModManProfile>
+    <R2ModManProfile>Dev_FuelDaylightSaving</R2ModManProfile>
   </PropertyGroup>
 
   <!-- Valheim paths -->
@@ -38,23 +38,16 @@
     <PluginsPath>$(BepInExPath)\plugins</PluginsPath>
   </PropertyGroup>
 
-  <!-- References -->
+  <!-- Jotunn paths -->
+  <PropertyGroup>
+    <VALHEIM_INSTALL>$(GamePath)</VALHEIM_INSTALL>
+    <BEPINEX_PATH>$(BepInExPath)</BEPINEX_PATH>
+    <ExecutePrebuild>true</ExecutePrebuild>
+  </PropertyGroup>
+
+  <!-- Packages -->
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>$(BepInExPath)\core\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_valheim_publicized">
-      <HintPath>$(PublicizedPath)\assembly_valheim_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="BepInEx">
-      <HintPath>$(BepInExPath)\core\BepInEx.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>$(ManagedPath)\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(ManagedPath)\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
+    <PackageReference Include="JotunnLib" Version="2.20.1" />
   </ItemGroup>
 
   <!-- Clean BepInEx plugins after clean -->

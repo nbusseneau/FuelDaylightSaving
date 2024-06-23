@@ -4,10 +4,13 @@ using System.Linq;
 using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
+using Jotunn.Utils;
 
 namespace FuelDaylightSaving;
 
 [BepInPlugin(ModGUID, ModName, ModVersion)]
+[BepInDependency(Jotunn.Main.ModGuid, BepInDependency.DependencyFlags.HardDependency)]
+[NetworkCompatibility(CompatibilityLevel.VersionCheckOnly, VersionStrictness.Minor)]
 public class Plugin : BaseUnityPlugin
 {
   private const string ModGUID = "nbusseneau.FuelDaylightSaving";
@@ -25,7 +28,9 @@ public class Plugin : BaseUnityPlugin
 
   public void Awake()
   {
-    s_exceptionList = Config.Bind("Behaviour", "Exception list", s_defaultExceptionList.Join(), "List of piece names whose fireplace should be kept lit at all times (e.g. because you want to use them for cooking stations or as comfort providers).");
+    ConfigurationManagerAttributes isAdminOnly = new() { IsAdminOnly = true };
+    var exceptionListConfigDescription = "List of piece names whose fireplace should be kept lit at all times (e.g. because you want to use them for cooking stations or as comfort providers).";
+    s_exceptionList = Config.Bind("Behaviour", "Exception list", s_defaultExceptionList.Join(), new ConfigDescription(exceptionListConfigDescription, tags: isAdminOnly));
     ExceptionList = ParseExceptionList(s_exceptionList.Value);
     s_exceptionList.SettingChanged += (_, _) => ExceptionList = ParseExceptionList(s_exceptionList.Value);
     SetUpConfigWatcher();
@@ -38,7 +43,7 @@ public class Plugin : BaseUnityPlugin
 
   private void SetUpConfigWatcher()
   {
-    FileSystemWatcher watcher = new(Paths.ConfigPath, Path.GetFileName(Config.ConfigFilePath));
+    FileSystemWatcher watcher = new(BepInEx.Paths.ConfigPath, Path.GetFileName(Config.ConfigFilePath));
     watcher.Changed += ReadConfigValues;
     watcher.Created += ReadConfigValues;
     watcher.Renamed += ReadConfigValues;
