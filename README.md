@@ -5,6 +5,10 @@ Configurable **exception list** (default: never disable campfires and hearths, f
 
 ![showcase](https://github.com/nbusseneau/FuelDaylightSaving/assets/4659919/18650599-6092-4a31-8234-d93ec2b7b95d)
 
+## Video showcase
+
+https://github.com/nbusseneau/FuelDaylightSaving/assets/4659919/9d8dd94b-0af3-4770-9ce5-ebd5b0f6bd50
+
 ## Features
 
 - Fuel-based **fireplaces** are disabled in daylight, except those specified in a configurable **exception list**.
@@ -43,7 +47,7 @@ Feel free to [report any issue you find](https://github.com/nbusseneau/FuelDayli
 In other words:
 
 - This mod can be installed on servers intended for Xbox crossplay, and all clients will still be able to join.
-- This mod can be installed on your side as a client, and you will still be able to join any server (even vanilla ones)
+- This mod can be installed on your side as a client, and you will still be able to join any server (even vanilla ones).
   However, since this mod is not only cosmetic but impacts gameplay, you should probably ask the admin and other players first out of courtesy.
 
 ### Thunderstore (recommended)
