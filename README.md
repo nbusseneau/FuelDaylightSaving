@@ -1,4 +1,4 @@
-# Fuel Daylight Saving™️
+# Fuel Daylight Saving™
 
 Very simple [Valheim](https://store.steampowered.com/app/892970/Valheim/) mod that disables fuel-based **fireplaces** in daylight.
 Configurable **exception list** (default: never disable campfires and hearths, for cooking and comfort purposes), enforceable server-side.
@@ -18,7 +18,7 @@ https://github.com/nbusseneau/FuelDaylightSaving/assets/4659919/9d8dd94b-0af3-47
 
 ## But why?
 
-**Fuel Daylight Saving™️** helps you ~~reduce your CO₂ emissions~~ save on precious fuel and reduce the frequency of annoying refueling rounds.
+**Fuel Daylight Saving™** helps you ~~reduce your CO₂ emissions~~ save on precious fuel and reduce the frequency of annoying refueling rounds.
 Incidentally, it also helps you ~~fight against climate change~~ save on FPS when in daylight, as lit **fireplaces** are resource hogs in Valheim.
 
 ## Compatibility
@@ -33,7 +33,7 @@ In other words, if multiple players are in the same zone:
 
 ### With other mods
 
-**Fuel Daylight Saving™️** hooks onto the `Fireplace` component itself and should work transparently with all mods, including those that add new **fireplaces**.
+**Fuel Daylight Saving™** hooks onto the `Fireplace` component itself and should work transparently with all mods, including those that add new **fireplaces**.
 However, it cannot automatically detect if any modded **fireplace** should be added to the **exception list**.
 While you can always configure it yourself, if you are a mod author or user and think a modded **fireplace** should be added to the default **exception list**, please do contact me: I'm more than happy to extend it.
 Feel free to [report any issue you find](https://github.com/nbusseneau/FuelDaylightSaving/issues/new).
@@ -74,5 +74,5 @@ In other words:
 
 ## Special thanks
 
-**Fuel Daylight Saving™️** is a reimplementation of a mod initially created by [warpalicious](https://thunderstore.io/c/valheim/p/warpalicious/).
+**Fuel Daylight Saving™** is a reimplementation of a mod initially created by [warpalicious](https://thunderstore.io/c/valheim/p/warpalicious/).
 Check out their POI content mods, you won't regret it 👍
