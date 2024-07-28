@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Add small margin to day time detection to account for low light during sunrise and sunset.
+
 ### Fixed
 
 - Fix missing `server-side` Thunderstore tag.
