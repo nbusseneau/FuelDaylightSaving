@@ -15,6 +15,6 @@ public class Patches
     // with an additional small margin w.r.t. to day time to account for low light during sunrise and sunset
     if (EnvMan.instance.GetCurrentEnvironment() is { } currentEnvironment && currentEnvironment.m_alwaysDark) return;
     var dayFraction = EnvMan.instance.GetDayFraction();
-    if (dayFraction >= 0.27f && dayFraction <= 0.73f) __result = false;
+    if (dayFraction >= 0.28f && dayFraction <= 0.72f) __result = false;
   }
 }
