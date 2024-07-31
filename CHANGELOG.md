@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Further increase margin for sunrise / sunset.
+
 ## [0.3.1] - 2024-07-30
 
 ### Changed
