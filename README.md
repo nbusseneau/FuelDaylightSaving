@@ -59,7 +59,7 @@ In other words:
 
 - **[Prerequisites]**
   - Install [**BepInExPack Valheim**](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/).
-- Download [nbusseneau-Fuel_Daylight_Saving-0.3.1.zip](https://github.com/nbusseneau/FuelDaylightSaving/releases/latest/download/nbusseneau-Fuel_Daylight_Saving-0.3.1.zip).
+- Download [nbusseneau-Fuel_Daylight_Saving-0.3.2.zip](https://github.com/nbusseneau/FuelDaylightSaving/releases/latest/download/nbusseneau-Fuel_Daylight_Saving-0.3.2.zip).
 - Extract the archive and move everything to your `BepInEx/plugins/` directory. It should look like this:
   ```
   BepInEx/
