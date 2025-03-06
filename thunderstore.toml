@@ -12,7 +12,7 @@ containsNsfwContent = false
 
 [package.dependencies]
 denikson-BepInExPack_Valheim = "5.4.2202"
-ValheimModding-Jotunn = "2.20.3"
+ValheimModding-Jotunn = "2.24.2"
 
 
 [build]
@@ -34,4 +34,4 @@ repository = "https://thunderstore.io"
 communities = [ "valheim", ]
 
 [publish.categories]
-valheim = [ "client-side", "server-side", "mods", "tweaks", "utility", "ashlands-update", ]
+valheim = [ "client-side", "server-side", "mods", "tweaks", "utility", "bog-witch-update", ]
