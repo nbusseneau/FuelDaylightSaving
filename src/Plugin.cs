@@ -15,7 +15,7 @@ public class Plugin : BaseUnityPlugin
 {
   private const string ModGUID = "nbusseneau.FuelDaylightSaving";
   private const string ModName = "FuelDaylightSaving";
-  private const string ModVersion = "0.4.0";
+  private const string ModVersion = "0.4.1";
 
   private static readonly List<string> s_defaultExceptionList = [
     "fire_pit",
