@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-10-05
+
 ### Changed
 
 - Support for 1.0 (Deep North).
@@ -74,7 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial version.
 
-[unreleased]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.4.1...HEAD
+[unreleased]: https://github.com/nbusseneau/FuelDaylightSaving/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.4.1...1.0.0
 [0.4.1]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.3.2...0.4.0
 [0.3.2]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.3.1...0.3.2
