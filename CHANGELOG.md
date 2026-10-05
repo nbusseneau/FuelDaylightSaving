@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-10-05
+
 ### Fixed
 
 - Fix missing `deep-north-update` Thunderstore tag.
@@ -80,7 +82,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial version.
 
-[unreleased]: https://github.com/nbusseneau/FuelDaylightSaving/compare/1.0.0...HEAD
+[unreleased]: https://github.com/nbusseneau/FuelDaylightSaving/compare/1.0.1...HEAD
+[1.0.1]: https://github.com/nbusseneau/FuelDaylightSaving/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.4.1...1.0.0
 [0.4.1]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/nbusseneau/FuelDaylightSaving/compare/0.3.2...0.4.0
